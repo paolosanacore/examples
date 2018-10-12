@@ -1,0 +1,9 @@
+---
+- name: play to setup web server
+  hosts: server1
+  tasks:
+  - name: http server update
+    yum:
+      name: httpd
+      state: latest
+...
